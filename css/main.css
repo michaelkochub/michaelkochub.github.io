@@ -46,5 +46,6 @@ html, body {
 #top_header #main_nav a {
 	color: #8b8b9f;
 	text-decoration: none;
+	text-transform: uppercase;
 	margin-left: 1em;
 }
