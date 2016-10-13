@@ -1,9 +1,12 @@
 ---
 layout: default
+excerpt_separator: <!--exp-->
 ---
-<h1>{{ page.title }}</h1>
-<p class="meta">{{ page.date | date_to_string }}</p>
+<div class="markdown-body">
+	<h4>{{ page.title }}</h4>
+	<p class="meta">{{ page.date | date_to_string }}</p>
 
-<div class="post">
-	{{ content }}
+	<div class="post">
+		{{ content }}
+	</div>
 </div>

@@ -2,13 +2,23 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 @charset "utf-8";
+ 
+{% include github-md.scss %}
+{% include post-list-style.scss %}
+
+$main: #252529;
+$secondary: #8b8b9f;
+$highlight:	#FE603E;
+$white: #FFFFFF;
+$red: #E81A54;
 
 * {
 	box-sizing: border-box;
 }
 
 html, body {
-	font-family: 'Helvetica', sans-serif;
+	font-family: 'Open Sans', sans-serif;
+	min-width: 500px;
 }
 
 .clearfix:before, .clearfix:after {
@@ -27,15 +37,19 @@ html, body {
 }
 
 #top_header {
-	padding: 1.5em 0;
+	padding: 4.5em 0;
 	.logo {
 		float: left;
 		text-transform: uppercase;
 		font-size: 1.15em;
 		font-weight: 700;
-		span {
-			font-weight: 300;
-			color: #73e289;
+		a {
+			color: $main;
+			text-decoration: none;
+			-webkit-transition:1.0s;
+			&:hover {
+				color: $highlight;
+			}
 		}
 	}
 	#main_nav {
@@ -43,11 +57,35 @@ html, body {
 		font-size: .9em;
 		padding-top: 1em;
 		a {
-			color: #8b8b9f;
+			color: $secondary;
 			text-decoration: none;
 			text-transform: uppercase;
 			margin-left: 1em;
+			-webkit-transition:1.0s;
+			&:hover {
+				color:$highlight;
+			}
 		}
 	}
 }
 
+#main_footer {
+	padding: 4.5em 0;
+	p {
+		color: $secondary;
+		font-size: .75em;
+		margin: 0;
+	}
+	.links {
+		display: inline;
+		a {
+			color: $secondary;
+			font-size: .75em;
+			text-decoration: none;
+			margin: 0 0.5em;
+			&:hover {
+				color: $highlight;
+			}
+		}
+	}
+}

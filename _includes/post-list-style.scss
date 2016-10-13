@@ -1,0 +1,41 @@
+$line-color: #AEB0B0;
+$red: #E81A54;
+
+#posts {
+	 list-style: none;
+		.item {
+			.info {
+
+			}
+			a {
+				float: left;
+				font-weight: 700;
+				text-decoration: none;
+				color: $red;
+				&:hover{
+					text-decoration: underline;
+				}
+			}
+			#date {
+				font-size:0.8em;
+				text-transform: uppercase;
+				float: right;
+			}
+			.detail {
+				padding-top: .7em;
+				text-transform: lowercase;
+				&:before {
+					content: "\a";
+					white-space: pre;
+				}
+			}
+			&:after {
+			    content: "";
+			    display: block;
+			    height: 0.25em;
+			    margin: 3em;
+			    opacity: 0.6;
+			    background: $line-color;
+			}
+	}
+}

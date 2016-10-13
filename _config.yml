@@ -28,5 +28,10 @@ github_username:  jekyll
 markdown: kramdown
 theme: minima
 
+# code highlighting uses rouge
+kramdown:
+    input: GFM 
+    syntax_highlighter: rouge
+
 # make sure blog post includes blog directory in url
 permalink: /blog/:year/:month/:day/:title
