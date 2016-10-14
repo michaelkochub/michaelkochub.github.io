@@ -1,7 +1,7 @@
 $line-color: #AEB0B0;
 $red: #E81A54;
 $secondary: #8b8b9f;
-
+$quote-color: #7a7a7a;
 
 #posts {
 	 list-style: none;
@@ -28,33 +28,33 @@ $secondary: #8b8b9f;
 				font-family: Georgia, serif;
 				font-size: 1.0em;
 				font-style: italic;
-				width: 500px;
+				width: 80%;
 				margin: 0.25em 0;
-				padding: 0.35em 40px;
+				padding: 0.35em 3.25em;
 				line-height: 1.45;
 				position: relative;
 				color: #383838;	
 				&:before {
 					display: block;
-					padding-left: 10px;
+					padding-left: 0.15em;
 					content: "\201C";
-					font-size: 80px;
+					font-size: 5em;
 					position: absolute;
-					left: -20px;
-					top: -30px;
-					color: #7a7a7a;
+					left: -0.20em;
+					top: -0.40em;
+					color: $quote-color;
 				}
 				&:after {
 				    font-family: Georgia, serif;
 				    position: absolute;
 				   /* display: block; don't use this, it raised the quote too high from the bottom - defeated line-height? */
 				    float:left;
-				    font-size:80px;
+				    font-size:5em;
 				    line-height: 1;
-				    right:0;
+				    right:0em;
 				    bottom:-0.5em;
 				    content: "\201D";
-					color: #7a7a7a;
+					color: $quote-color;
 
 				}			
 				
