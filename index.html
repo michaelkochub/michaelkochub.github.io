@@ -5,10 +5,13 @@ layout: default
 		{% for post in site.posts %}
 		<li class="item">
 			<p class="info">
-			<a id="title" href="{{ post.url }}">{{ post.title }}</a>
-			<div id="date">{{ post.date | date_to_string }}</div>
+				<a id="title" href="{{ post.url }}">{{ post.title }}</a>
+				<div id="date">{{ post.date | date_to_string }}</div>
 			</p>
-			<p class="detail">{{ post.detail }}</p>
+			<p class="detail">
+				<blockquote>{{ post.detail }}</blockquote>
+			</p>
+
 		</li>
 		{% endfor %}
 
