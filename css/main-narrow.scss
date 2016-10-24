@@ -44,10 +44,11 @@ html, body {
 #top_header {
 	padding: 2.5em 0;
 	margin: 0 0 2.5em 0;
+	text-transform: lowercase;
 	background-color: $background;
 	.logo {
+		display: block;
 		float: left;
-		text-transform: lowercase;
 		font-size: 2em;
 		a {
 			color: $main;
@@ -60,15 +61,23 @@ html, body {
 
 	}
 	#main_nav {
-		float: right;
+		&:before {
+			content: "";
+			    display: block;
+			    height: 0.25em;
+			    margin: 2em;
+			    opacity: 0.6;
+			    
+		}
 		font-size: .9em;
 		padding-top: 2.5em;
 		a {
 			color: $secondary;
 			text-decoration: none;
 			text-transform: uppercase;
-			margin-left: 1em;
 			-webkit-transition:1.0s;
+			margin-left: 1em;
+
 			&:hover {
 				color:$highlight;
 			}

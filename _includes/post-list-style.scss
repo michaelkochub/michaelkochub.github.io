@@ -1,10 +1,12 @@
 $line-color: #AEB0B0;
 $red: #E81A54;
+$darkgrey: #3b81cc;
 $secondary: #8b8b9f;
 $quote-color: #7a7a7a;
 
 #posts {
 	 list-style: none;
+	 padding-top: 0.1em;
 		.item {
 			.info {
 
@@ -13,7 +15,7 @@ $quote-color: #7a7a7a;
 				float: left;
 				font-weight: 700;
 				text-decoration: none;
-				color: $red;
+				color: $darkgrey;
 				font-size: 1.15em;
 				&:hover{
 					text-decoration: underline;
@@ -30,7 +32,7 @@ $quote-color: #7a7a7a;
 				font-style: italic;
 				width: 80%;
 				margin: 0.25em 0;
-				padding: 0.35em 3.25em;
+				padding: 0.35em 2.25em 0.35em 3.25em;
 				line-height: 1.45;
 				position: relative;
 				color: #383838;	
@@ -43,19 +45,6 @@ $quote-color: #7a7a7a;
 					left: -0.20em;
 					top: -0.40em;
 					color: $quote-color;
-				}
-				&:after {
-				    font-family: Georgia, serif;
-				    position: absolute;
-				   /* display: block; don't use this, it raised the quote too high from the bottom - defeated line-height? */
-				    float:left;
-				    font-size:5em;
-				    line-height: 1;
-				    right:0em;
-				    bottom:-0.5em;
-				    content: "\201D";
-					color: $quote-color;
-
 				}			
 				
 			}
