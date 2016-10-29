@@ -25,6 +25,7 @@ html, body {
 	min-width: 500px;
 	margin: 0;
 	padding: 0;
+	overflow-x: hidden;
 }
 
 .clearfix:before, .clearfix:after {
@@ -69,12 +70,27 @@ html, body {
 			text-decoration: none;
 			text-transform: uppercase;
 			margin-left: 1em;
+			-webkit-transition:1.0s;
+			&:hover {
+				color: #aabbcc;
+			}
 		}
 	}
 }
 
 #main_footer {
-	padding: 4.5em 0;
+	&:before {
+		position: relative;
+		left: -50em;
+	    content: "";
+	    display: block;
+	    height: 0.05em;
+	    margin: 2.5em;
+	    opacity: 0.6;
+	    background: $line-color;
+	    width: 900%;
+	}
+	padding: 2.5em 0;
 	p {
 		color: $footer-color;
 		font-size: .75em;

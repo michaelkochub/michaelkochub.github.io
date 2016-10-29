@@ -4,7 +4,7 @@ title: "Sample post"
 date: 2016-10-11
 detail: "Read on to find out! This might just be good. Let's keep typing! Let's hope this works out as expected... We shall see"
 ---
-We'll typically use the shell like so
+We'll typically code in Javascript like so
 {% highlight javascript linenos %}
 var x = 5;
 var hey = "hello";
