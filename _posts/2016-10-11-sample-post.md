@@ -4,17 +4,19 @@ title: "Sample post"
 date: 2016-10-11
 detail: "Read on to find out! This might just be good. Let's keep typing! Let's hope this works out as expected... We shall see"
 ---
+We'll typically use the shell like so
+{% highlight javascript linenos %}
+var x = 5;
+var hey = "hello";
+{% endhighlight %}
 
-This is an excerpt<!--exp-->
-
-#### First post
+## First post
 I hope this goes *well*
 
 
 
 That's all for now...
 
-`code`
 
 {% highlight ruby linenos %}
 require 'redcarpet'
