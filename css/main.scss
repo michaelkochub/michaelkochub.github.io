@@ -68,10 +68,6 @@ html, body {
 			text-decoration: none;
 			text-transform: uppercase;
 			margin-left: 1em;
-			-webkit-transition:1.0s;
-			&:hover {
-				color:$highlight;
-			}
 		}
 	}
 }
