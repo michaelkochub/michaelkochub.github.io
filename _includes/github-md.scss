@@ -70,13 +70,25 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  border-radius: none;
 }
 
-.highlight pre, code {
-
+.highlight pre {
     background-color: #eef;
-    margin: 1em;
+    margin: 0em 1em;
     white-space: pre;
     overflow-x: auto;
     font-family: 'Source Code Pro', monospace;
+    border-radius: 0.2em;
+}
+
+code {
+
+    background-color: #eef;
+    margin: 0em;
+    white-space: pre;
+    overflow-x: auto;
+    font-family: 'Source Code Pro', monospace;
+    padding: 0.1em 0.2em;
+    border-radius: 0.2em;
 }

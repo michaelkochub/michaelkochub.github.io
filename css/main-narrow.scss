@@ -25,6 +25,8 @@ html, body {
 	min-width: 500px;
 	margin: 0;
 	padding: 0;
+	overflow-x: hidden;
+
 }
 
 .clearfix:before, .clearfix:after {

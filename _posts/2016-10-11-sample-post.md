@@ -12,7 +12,7 @@ var hey = "hello";
 
 ## First post
 I hope this goes *well*
-
+Here is ```code``` anad here is some more `code`
 
 
 That's all for now...
