@@ -82,6 +82,40 @@
     border-radius: 0.2em;
 }
 
+img {
+  height: auto;
+  width: auto;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+a:link {
+  color: orange;
+}
+
+a:visited {
+  color: red;
+}
+
+a {
+  text-decoration: none; 
+  font-weight: bold;
+  &:link {
+    color: orange;
+  }
+  &:visited {
+    color: red;
+  }
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+img {
+  border-radius: 0.5em;
+}
+
 code {
 
     background-color: #eef;
