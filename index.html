@@ -2,7 +2,7 @@
 layout: default
 ---
 	<ul id="posts">
-		{% for post in site.posts %}
+		{% for post in site.posts reversed %}
 		<li class="item">
 			<p class="info">
 				<a id="title" href="{{ post.url }}">{{ post.title }}</a>
