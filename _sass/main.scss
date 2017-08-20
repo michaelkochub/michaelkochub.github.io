@@ -1,3 +1,6 @@
+$baseurl: '{{ site.baseurl }}';
+@import "404";
+
 body {
   font-size: 14px;
   line-height: 20px;

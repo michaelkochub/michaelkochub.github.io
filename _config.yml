@@ -1,15 +1,15 @@
 # Site Info
-title:              "Kochuby"
+title:              "kochub"
 description:        "Personal site for blogging and sharing code."
 google_verify:      epFgX0s_0RM3CdjwFcsewfXzPov2g8s9ZBOLyaIUH-o # Put your Google Verification here
 google_analytics:   UA-XXXXXXX-X # Put your Google Analytics code
 
 # Author Info
-author_name:        "Michael Kochuby" # Your name here
+author_name:        "michael kochub" # Your name here
 
 # Site Settings
 baseurl:            "" # Base URL must end WITHOUT a slash, default: ""
-permalink:          /notes/:title # Post permalink
+permalink:          /posts/:title # Post permalink
 mathjax:            true  # enables support for mathjax - set to false to disable
 
 # Site Build
