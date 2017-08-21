@@ -18,8 +18,7 @@ To a newcomer, however, code-golfed programs--a term synonymous with obfuscated 
 The following outputs the first 10 [Fibonacci numbers][fibonacci] in a pithy 91 bytes:
 
 ```python
-print(list(map(lambda x,f=lambda x,f:(f(x-1,f)+f(x-2,f)) if x>1 else 1:
-f(x,f), range(10))))
+print(list(map(lambda x,f=lambda x,f:(f(x-1,f)+f(x-2,f)) if x>1 else 1:f(x,f), range(10))))
 ```
 
 Let's outline our plan of attack:
@@ -73,7 +72,7 @@ Not terribly exciting, I know. But we're getting closer in terms of functionalit
 
 ## Rewrite
 
-First, we start by de-lambdafying the code. Upon first inspection, you may be tempted to say that we are dealing with nested lambdas. We can analyze that claim by checking this by converting the inner lambda into a non-anonymous function I will christen `fib_weird`.
+First, we start by de-lambdafying the code. Upon first inspection, you may be tempted to say that we are dealing with nested lambdas. We can analyze that claim by checking this and converting the inner lambda into a non-anonymous function I will christen `fib_weird`.
 
 ```python
 def fib_weird(val, func):
@@ -112,7 +111,7 @@ At this point, you might be wondering why we can't just use `fib_norm` as the de
 
 ```python
 def fib_norm(x):
-    return fib_norm(x - 1 + fib_norm(x - 2) \
+    return fib_norm(x - 1) + fib_norm(x - 2) \
         if x > 1 \
         else 1
 
@@ -152,6 +151,8 @@ Silly conversations aside, I also want to cover a question I raised during the *
 
 Now while your first reaction may be 😱 I think you'll be able to sort this one out. Since this is the **Generalize** phase, I will not be explaining this one. But, you can try applying the workflow you learned while deciphering code obfuscated by _default-valued lambdas_ to deciphering this case, where we have code obfuscated by _nested lambdas_. Since I'm feeling generous, however, I've included a slightly watered-down example you can take a look at as well. If you want the full experience, however, I recommend only looking at the code snippet above.
 
+By the way, the inner, nested lambda satisfies the definition of a [closure][closure] because we have an nested function that accesses values from the local variables of the higher-order function. Perhaps I'll have a post about that...
+
 ```python
 product = lambda f,g:lambda x,y:f(x)*g(y)
 prduct(lambda k:k+1,lambda j:j-1)(5, 5) # 24
@@ -171,3 +172,4 @@ Anyway, I hoped you enjoyed reading this post. Python really is a powerful langu
 [fibrecur]: https://en.wikipedia.org/wiki/Recurrence_relation#Fibonacci_numbers
 [anonymous]: https://en.wikipedia.org/wiki/Anonymous_function
 [nested]: https://stackoverflow.com/questions/36391807/understanding-nested-lambda-function-behaviour-in-python
+[closure]: https://en.wikipedia.org/wiki/Closure_(computer_programming)
