@@ -1,7 +1,7 @@
 ---
 title: De-obfuscating Python one-liners
 updated: 2017-08-19 19:26
-title_stub: de-obfuscate no. 1
+title_stub: lambdas
 ---
 
 Python, which you'll come to find out is my favorite language to play with, features a very handy [Programming FAQ][progfaq] that I recommend you read over, regardless of your level of experience. One of the questions reads,
