@@ -155,7 +155,7 @@ By the way, the inner, nested lambda satisfies the definition of a [closure][clo
 
 ```python
 product = lambda f,g:lambda x,y:f(x)*g(y)
-prduct(lambda k:k+1,lambda j:j-1)(5, 5) # 24
+product(lambda k:k+1,lambda j:j-1)(5, 5) # 24
 ```
 
 Anyway, I hoped you enjoyed reading this post. Python really is a powerful language that is great to use in both the puzzling and non-puzzling worlds.
