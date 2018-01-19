@@ -1,4 +1,5 @@
 $baseurl: '{{ site.baseurl }}';
+$orange: #f18e32;
 @import "404";
 
 body {
@@ -75,7 +76,7 @@ blockquote {
     -moz-transition: background 1s ease-out;
     &:hover,
     &:focus {
-      background: #f18e32;
+      background: $orange;
     }
     &:hover + .logo-prompt,
     &:focus + .logo-prompt {
@@ -144,6 +145,10 @@ sup {
 }
 time {
   color: #555;
+}
+.contributor-post {
+  color: #555;
+  margin-top: 0.5em;
 }
 code,
 pre {
@@ -312,6 +317,13 @@ section {
         //white-space: nowrap !important;
         word-wrap: normal !important;
       }
+      .contributor-full {
+        font-size: 85%;
+        color: #757575;
+      }
+      .contributor {
+        color: $orange;
+      }
       a {
         text-decoration: none;
         border: 0;
@@ -323,10 +335,12 @@ section {
         margin: 0 0 0 20px;
       }
       span {
-        display: inline-block;
-        color: #757575;
-        letter-spacing: 1px;
-        text-transform: uppercase;
+        .date {
+          display: inline-block;
+          color: #757575;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+        }
       }
       @media (min-width: 992px) {a {
           border-bottom: 2px solid transparent;

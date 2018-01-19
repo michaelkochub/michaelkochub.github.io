@@ -52,7 +52,7 @@ Bill receives the box with two locks. What is he to do? He simply undoes his fir
  [Bill's house] -> [ T ] -> [Ted's House]
 ```
 
-Once it arrives on Ted's doorstep, he will be able to unlock his own lock and have access to the letter, which tells Ted that he is _'totally awesome'_ and _'far out'_. He also now has a lock that he can use to send a response to Bill, without having to do the same son and dance as before.
+Once it arrives on Ted's doorstep, he will be able to unlock his own lock and have access to the letter, which tells Ted that he is _'totally awesome'_ and _'far out'_. He also now has a lock that he can use to send a response to Bill, without having to do the same song and dance as before.
 
 This is a good proxy for SSL/LTS, as we use it in modern webservers.
 
@@ -102,7 +102,7 @@ The mechanism in Java to use SSL is generally via java.net. An example bit of co
 
 Newer code, using an HttpClientBuilder, would simply set the ssl context, using `httpClientBuilder.setSSLContext(localSslContext)`. Internally, when creating a socket, Java will initiate this assymetric key exchange before sending any data via HTTP.
 
-Among the myriad things to know about Java and SSL is that the Java Virtual Machine (JVM) has its own keystore. The code above calls a `getKeyManagers()` method, which essentially returns an array of KeyManagers that manage the various private keys of the server, including the file specified by the property `"javax.net.ssl.keyStore"`. The keyStore is where Java stores its private key for encryption, and an additional place that is of note is the trustStore, which uses a similar property value for [access in Java][keystore_trustore]. When a certiicate is in the truststore, it will be trusted even if it is expired or not signed by a third party (these types of certificates are sometimes called _Client Certificates_).
+Among the myriad things to know about Java and SSL is that the Java Virtual Machine (JVM) has its own keystore. The code above calls a `getKeyManagers()` method, which essentially returns an array of KeyManagers that manage the various private keys of the server, including the file specified by the property `"javax.net.ssl.keyStore"`. The keyStore is where Java stores its private key for encryption, and an additional place that is of note is the trustStore, which uses a similar property value for [access in Java][keystore_trustore]. When a certificate is in the truststore, it will be trusted even if it is expired or not signed by a third party (these types of certificates are sometimes called _Client Certificates_).
 
 To update these certificates one can also use a [keytool][keytool] to export or import certificates, or for testing purposes simply change the System properties to point to different files.
 

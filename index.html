@@ -18,11 +18,16 @@ layout: default
 		<ul>
 			<li>
 				<div class="post-date">
-					<span>{{ post.date | date: "%b %d" }}</span>
+					<span><div class="date">{{ post.date | date: "%b %d" }}</div></span>
 				</div>
 				<div class="title">
 					<a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
 				</div>
+				{% if post.contributor %}
+					<div class="contributor-full">
+						guest contributor: <span class="contributor">{{ post.contributor }}</span>
+					</div>
+				{% endif %}
 			</li>
 		</ul>
 
