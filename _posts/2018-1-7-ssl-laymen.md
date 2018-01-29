@@ -5,7 +5,7 @@ title_stub: ssl
 contributor: Matt Kornfield
 ---
 
-Hi from guest writer Matt here! If you are reading this, you are most likely using some sort of browser. This page itself is not served using HTTPS, but many many other sites, like Google, Facebook, etc. will transport data using SSL/TLS.
+Hi from guest writer Matt here! If you are reading this, you are most likely using some sort of browser. This page itself is served using HTTPS, along with many other sites, like Google, Facebook, etc. that will transport data using SSL/TLS.
 
 You might be aware of what it is, but could you explain Secure Socket Layer/ Transport Layer Security to a layman? Can you picture in your mind what is happening when you type https://google.com into the browser? Allow us to take a journey, and we'll start with a simple trip into the 90s, so prepare your VHS box sets.
 
